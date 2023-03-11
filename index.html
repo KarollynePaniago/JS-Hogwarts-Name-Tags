@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="JS: Hogwarts’ Name Tags" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+
+    <style>
+  #id-card {
+  border:1px solid black;
+  border-radius:5px;
+  width: 400px;
+  font-family: conforta;
+  padding: 6px;
+  color:white;
+  text-shadow:black 0.4em 0.3em 2em;
+  background-color:rgb(79, 0, 16);
+}
+
+#id-name {
+float: right;
+}
+
+.logo{
+  width:100px;
+}
+button{
+  font-size:18px;
+  margin:10px 10px 0 0;
+  background-color:white;
+}
+    </style>
+</head>
+<body>
+    <div id="id-card" style="">
+            <h3>Hogwarts School of Witchcraft and Wizardry</h3>
+    <img class="logo"src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Coat_of_arms_Hogwart_with_motto.svg/1250px-Coat_of_arms_Hogwart_with_motto.svg.png">
+    <h1 id="id-name">First last</h1>
+</div>
+  
+<button onclick="changeToHarry()">Harry</button>
+<button onclick="changeToHermione()">Hermione</button>
+<button onclick="changeToRon()">Ron</button>
+<button onclick="changeToBlanck()">Blanck</button>
+
+    <script>
+        var idnameEl = document.getElementById("id-name");
+        idnameEl.innerHTML = "Karollyne Paniago"
+
+function changeToHarry(){
+  document.getElementById("id-name").innerHTML= "Harry Potter"
+}
+function changeToHermione(){
+  document.getElementById("id-name").innerHTML = "Hermione Granger"
+}
+function changeToRon(){
+  document.getElementById("id-name").innerHTML = "Ronald Weasley"
+}
+function changeToBlanck(){
+  document.getElementById("id-name").innerHTML =" "
+}
+    </script>
+    
+</body>
+</html>
